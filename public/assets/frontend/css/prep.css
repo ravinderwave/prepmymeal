@@ -1,0 +1,1686 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none
+}
+
+body {
+    background: #555;
+}
+
+.logo {
+    float: left;
+
+    width: 25%;
+
+    margin-top: 12px;
+
+    margin-bottom: 12px;
+
+}
+
+.get-started a {
+
+    color: #000 !important;
+
+}
+
+.logo a {
+    float: left;
+}
+
+nav {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a, #cssmenu #head-mobile {
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#cssmenu:after, #cssmenu > ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+#cssmenu #head-mobile {
+    display: none
+}
+
+#cssmenu > ul > li {
+    float: left
+}
+
+#cssmenu > ul > li > a {
+
+    padding: 17px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #4e4e4e;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+/*#cssmenu > ul > li:hover > a,#cssmenu ul li.active a{color:#fff}*/
+/*#cssmenu > ul > li:hover,#cssmenu ul li.active:hover,#cssmenu ul li.active,#cssmenu ul li.has-sub.active:hover{background:#F07C32 !important;-webkit-transition:background .3s ease;-ms-transition:background .3s ease;transition:background .3s ease;}*/
+#cssmenu > ul > li.has-sub > a {
+    padding-right: 30px
+}
+
+/*#cssmenu > ul > li.has-sub > a:after{position:absolute;top:22px;right:11px;width:8px;height:2px;display:block;background:#ddd;content:''}*/
+#cssmenu > ul > li.has-sub > a::before {
+
+    position: absolute;
+    right: 14px;
+    display: block;
+    content: '\f105';
+    -webkit-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease;
+    font: normal normal normal 14px/1 FontAwesome;
+
+}
+
+#cssmenu > ul > li.has-sub:hover > a::before {
+
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(90deg);
+
+}
+
+#cssmenu ul ul {
+    position: absolute;
+    left: -9999px
+}
+
+#cssmenu ul ul li {
+    height: 0;
+    -webkit-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    background: #ea7c00;
+    transition: all .25s ease
+}
+
+#cssmenu ul ul li:hover {
+}
+
+#cssmenu li:hover > ul {
+    left: auto
+}
+
+#cssmenu li:hover > ul > li {
+    height: 35px
+}
+
+#cssmenu ul ul ul {
+    margin-left: 100%;
+    top: 0
+}
+
+#cssmenu ul ul li a {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+    padding: 11px 15px;
+    width: 170px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 400;
+}
+
+#cssmenu ul ul li:last-child > a, #cssmenu ul ul li.last-item > a {
+    border-bottom: 0
+}
+
+#cssmenu ul ul li:hover > a, #cssmenu ul ul li a:hover {
+    color: #fff
+}
+
+#cssmenu ul ul li.has-sub > a:after {
+    position: absolute;
+    top: 16px;
+    right: 11px;
+    width: 8px;
+    height: 2px;
+    display: block;
+    background: #ddd;
+    content: ''
+}
+
+#cssmenu ul ul li.has-sub > a:before {
+    position: absolute;
+    top: 13px;
+    right: 14px;
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #ddd;
+    content: '';
+    -webkit-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease
+}
+
+#cssmenu ul ul > li.has-sub:hover > a:before {
+    top: 17px;
+    height: 0
+}
+
+#cssmenu ul ul li.has-sub:hover, #cssmenu ul li.has-sub ul li.has-sub ul li:hover {
+    background: #363636;
+}
+
+#cssmenu ul ul ul li.active a {
+    border-left: 1px solid #333
+}
+
+#cssmenu > ul > li.has-sub > ul > li.active > a, #cssmenu > ul ul > li.has-sub > ul > li.active > a {
+    border-top: 1px solid #333
+}
+
+.active.has-sub {
+
+    z-index: 99999;
+
+}
+
+.logo img {
+    width: 100%;
+
+}
+
+.open {
+
+    background: #ea7c00;
+    margin: 0;
+}
+
+.open li a {
+
+    color: #fff !important;
+
+}
+
+.home-slider .carousel-caption .banner-text {
+
+    font-size: 45px;
+    text-shadow: 1px 4px 1px #000000;
+
+}
+
+.home-slider .carousel-caption {
+
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.carousel-indicators li {
+
+    background: #fff !important;
+    height: 15px !important;
+    width: 15px !important;
+}
+
+.carousel-indicators .active {
+
+    background: #ea7c00 !important;
+    height: 16px !important;
+    width: 16px !important;
+    border: 1px solid #ea7c00 !important;
+
+}
+
+.main-space {
+
+    padding: 70px 10px;
+
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 35px;
+    color: #ea7c00;
+}
+
+.work-img img {
+
+    height: 60px;
+    margin: auto;
+}
+
+.work-img, .work-text {
+
+    text-align: center;
+}
+
+.work-heading {
+
+    padding-bottom: 12px;
+
+}
+
+.meal-product-img > div > img {
+    width: 100%;
+
+    box-shadow: 2px 2px 3px #000;
+}
+
+.translate {
+
+    padding: 0 !important;
+    margin: 20px;
+    box-shadow: -2px 2px 3px #000;
+
+}
+
+.meal-product-heading {
+    font-size: 30px;
+    margin-top: -9px;
+}
+
+.checked {
+    color: orange;
+}
+
+.rating {
+    padding-bottom: 20px;
+}
+
+.vat-text {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.price {
+
+    color: #ea7c00;
+
+}
+
+.product-bck {
+
+    background-image: url("../img/6398.jpg");
+    margin: 0px 16px;
+    height: 410px;
+
+}
+
+.translate {
+
+    position: absolute;
+    top: -15px;
+    width: 95%;
+    -ms-transform: translate(-49px, 14px);
+    -webkit-transform: translate(-49px, 14px);
+    transform: translate(-49px, 14px);
+    padding: 20px;
+    left: 19px;
+}
+
+.translate div {
+
+    padding: 0px;
+
+}
+
+.button-add {
+    padding: 10px 14px;
+    text-transform: uppercase;
+    background: #ea7c00;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.meal-form {
+    margin-left: -17px;
+    margin-top: 30px;
+}
+
+.form-control:focus {
+
+    border-color: #ea7c00 !important;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(234, 124, 0) !important;
+
+}
+
+.meal-form select {
+
+    border: 1px solid #ea7c00 !important;
+
+}
+
+.Kohlenhydrate {
+
+    background: #253312;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 38px 16px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 0px 6px #000;
+
+}
+
+.Kalorien {
+    background: #77823d !important;
+}
+
+.Proteine {
+    background: #e79535 !important;
+}
+
+.Proteine {
+    background: #e79535 !important;
+}
+
+.Fett {
+    background: #cda66e !important;
+}
+
+.meal-product-round-main {
+
+    padding: 0px !important;
+    margin-top: 35px;
+
+}
+
+.meal-product-description {
+    margin-top: 35px;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 23px;
+    word-spacing: 1px;
+    text-align: justify;
+}
+
+.polaroid {
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.get-startedtext .get-startedtext-heading {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.get-startedtext {
+    padding: 15px;
+    text-align: center;
+}
+
+.polaroid:hover {
+    background: #e79535;
+    z-index: 2;
+    color: #fff;
+}
+
+.polaroid:hover img {
+    opacity: 0.5;
+}
+
+.polaroid img {
+    height: 260px;
+}
+
+.food-icon-text {
+
+    font-size: 25px;
+    text-transform: uppercase;
+
+}
+
+.food-icon {
+
+    padding-top: 6px;
+
+}
+
+.value-left {
+    line-height: 100px;
+}
+
+.related-heading {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 35px;
+    color: #333;
+}
+
+.rlte-img img {
+    width: 100%;
+    border: 3px solid #eee;
+    padding: 30px;
+}
+
+.rlte-img:hover > img {
+    border: 3px solid #ea7c00;
+}
+
+.odr-now {
+    padding-left: 0px !important;
+    color: #ea7c00;
+    font-weight: 600;
+}
+
+.btn-odr-now {
+    text-align: right;
+    padding-right: 0px !important;
+}
+
+.now-btn {
+    background: #000;
+    color: #fff;
+    border: 0;
+    padding: 4px 8px;
+    text-transform: uppercase;
+}
+
+.rlte-img:hover .now-btn {
+    background: #ea7c00 !important;
+}
+
+.head-txt {
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 500px) {
+    .food-icon img {
+
+        height: 35px !important;
+        width: 35px !important;
+
+    }
+
+    .food-icon-text {
+
+        font-size: 18px;
+        padding-top: 7px;
+
+    }
+
+    .home-slider .carousel-caption .banner-text {
+
+        font-size: 26px;
+        text-shadow: 0px 3px 2px #000000;
+        margin-top: 42px !important;
+    }
+
+    .home-slider .carousel-caption {
+
+        position: absolute;
+        top: 15%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+    }
+}
+
+.product-bck {
+
+    height: 320px;
+}
+
+.meal-product-description {
+    clear: both;
+    padding-top: 32px;
+}
+
+.translate {
+
+    -ms-transform: translate(-49px, 14px);
+    -webkit-transform: translate(-49px, 14px);
+    transform: translate(-25px, -6px);
+
+}
+
+footer .menu-link {
+
+    padding-left: 13px !important;
+}
+
+.right-f {
+    text-align: left !important;
+}
+
+.polaroid img {
+
+    height: auto !important
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .comnt-by {
+        text-align: left !important;
+    }
+
+    .post-by-main {
+        padding-left: 0 !important;
+    }
+
+    .post-heading {
+        margin-bottom: 15px !important;
+    }
+
+    .show-product-kalorien {
+        width: 370px;
+    }
+
+    .show-product-kalorien {
+
+        width: 344px !important;
+
+        height: 294px;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .clear-bag-main .align-right {
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .product-price-list {
+        padding-top: 15px;
+    }
+
+    .hidden-xs-down .login-form-border {
+
+        width: 100% !important;
+        border-right: 0;
+        height: auto;
+        border-bottom: 3px solid #eee;
+        padding-top: 13px;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .related-img .rlte-img img {
+        height: 230px !important;
+        width: 260px !important;
+    }
+
+    .show-product-kalorien {
+        width: 255px !important;
+        height: 224px;
+    }
+
+    .show-product-kalorien .Kohlenhydrate {
+        background: #253312;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        padding: 28px 0px;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0px 0px 6px #000;
+    }
+
+    .show-product-kalorien .meal-product-round-main {
+        position: relative;
+        top: -13px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+    .food-icon img {
+
+        height: 45px !important;
+        width: 45px !important;
+
+    }
+
+    .food-icon-text {
+
+        font-size: 22px;
+        padding-top: 7px;
+
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .coupon_code_field .button-add {
+
+        margin-top: 10px;
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .food-icon-text {
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 7px 0px !important;
+    }
+
+    .meal-product-text {
+        margin-top: 60px;
+    }
+
+    .meal-product-description {
+        clear: both;
+        padding-top: 32px;
+    }
+
+    .right-f {
+        text-align: left;
+    }
+
+    footer .menu-link {
+        padding-left: 15px !important;
+    }
+
+    .related-img .rlte-img img {
+        height: 294px !important;
+        width: 325px !important;
+    }
+
+    .clear-bag-main a {
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .meal-product-text {
+        margin-top: 90px;
+    }
+
+    .sidebar-group-blog-post {
+        clear: both;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .right-f p {
+
+        text-align: right;
+
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .food-icon-text {
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 7px 0px !important;
+    }
+
+    .news-field {
+
+        width: 64% !important;
+    }
+
+    .show-product-kalorien .Kohlenhydrate {
+
+        height: 115px;
+        width: 115px;
+
+    }
+
+    .related-img .rlte-img img {
+
+        height: 284px !important;
+        width: 290px !important;
+
+    }
+
+    .show-product-kalorien .meal-product-round-main .Kohlenhydrate {
+
+        margin-left: 3px;
+
+    }
+
+    .show-product-kalorien {
+
+        width: 284px !important;
+    }
+}
+
+@media only screen  and (min-width: 1200px) {
+    .show-product-kalorien {
+        background: #0009;
+        width: 344px !important;
+        height: 294px;
+    }
+}
+
+.Calculate-calorie-heading {
+    font-size: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 13px 0px 9px 0px;
+    background: #ea7c00;
+    color: #fff;
+}
+
+.form-bck {
+    background: #eee;
+    padding: 50px;
+}
+
+.form-bck .select-field button {
+    width: 100%;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 23px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 62px solid #a65a04;
+    position: absolute;
+    left: -8px;
+    top: 0;
+}
+
+.calories-result img {
+    width: 100%;
+}
+
+.footer {
+
+    padding: 50px 13px;
+}
+
+.footer-heading {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #ea7c00;
+    font-weight: 600;
+}
+
+footer .menu-link {
+    padding-left: 50px;
+}
+
+.news-field {
+    float: left;
+}
+
+.news-button button {
+
+    background: #000;
+    border: 0;
+    color: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.news-field input {
+
+    padding: 9px 25px;
+
+}
+
+.footer-content form {
+
+    margin-top: 35px;
+
+}
+
+.social-icon {
+
+    margin-top: 25px;
+    font-size: 15px;
+
+}
+
+.social-icon i {
+
+    background: #ea7c00;
+    color: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 8px 10px;
+    margin-right: 8px;
+
+}
+
+.copy-write {
+
+    background: #000;
+    color: #fff;
+    padding: 19px 0px 7px 0px;
+
+}
+
+.right-f {
+
+    text-align: right;
+    padding-right: 70px;
+
+}
+
+/* contact page csss*/
+.heading.contact {
+    color: #ea7c00;
+}
+
+.sub-heading {
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 60px;
+}
+
+.contact-icon i {
+    background: #ea7c00;
+    padding: 16px;
+    font-size: 23px;
+    color: #fff;
+}
+
+.contact-page-box {
+    background: #eee;
+    padding: 0px 20px 60px 20px;
+    margin: 0px 40px;
+    margin-bottom: 60px !important;
+}
+
+.contact-icon {
+    position: relative;
+    top: -28px;
+}
+
+.Contact-number {
+    text-transform: capitalize;
+}
+
+.message-area {
+    margin-top: 35px;
+}
+
+.contact-button {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.contact-button button {
+
+    font-size: 21px;
+    padding: 10px 70px;
+    background: #ea7c00;
+    border: 0;
+    color: #fff;
+    border-radius: 7px;
+
+}
+
+.contact-field input {
+
+    padding: 24px 20px;
+    margin-bottom: 35px;
+
+}
+
+/* end contact page csss*/
+/* faq page csss*/
+.Faq {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.heading.faq {
+    color: #ea7c00;
+    font-size: 4rem;
+}
+
+.faq1 {
+    text-align: center;
+}
+
+.panel-title {
+    background: #ea7c00;
+
+}
+
+.panel-title a {
+    padding: 15px 20px;
+    color: #fff !important;
+}
+
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    background: #091f2f;
+    padding: 0;
+}
+
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-style: San-serif;
+    font-size: 1;
+}
+
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 2rem;
+    content: "\f068";
+    color: #fff;
+    float: right;
+
+}
+
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f067";
+}
+
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
+}
+
+.panel-title a:hover, .panel-title a:focus {
+    text-decoration: none !important;
+}
+
+.panel-body {
+
+    font-size: 14px !important;
+}
+
+/* end faq page csss*/
+/* blog page csss*/
+.post_date {
+    background: #ea7c00;
+
+    margin: 0 !important;
+
+    font-size: 18px;
+
+    padding: 8px 8px;
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.post-heading {
+    font-size: 20px;
+    margin: 0px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.post_date-main {
+    padding-left: 0px !important;
+}
+
+.blog-admin-text {
+
+    margin-top: 20px;
+    padding-bottom: 40px;
+
+}
+
+.blog-admin-text {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.post-by-main {
+    padding-right: 0 !important;
+    text-align: right;
+}
+
+.blog-admin-text {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ea7c00;
+}
+
+.blog-button a {
+    background: #ea7c00;
+    padding: 12px 25px;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.blog-button {
+    margin-top: 40px;
+}
+
+.blog-image img {
+    box-shadow: 1px 1px 5px #000;
+}
+
+.card {
+    margin-bottom: 60px;
+}
+
+.sidebar-latest-post-main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar-post-heading {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.sidebar-post-button a {
+
+    color: #ea7c00;
+
+}
+
+.sidebar-post-button a:hover {
+
+    text-decoration: none;
+
+}
+
+.latest-categories {
+    clear: both;
+    padding-top: 20px !important;
+}
+
+.categories-list ul {
+    list-style: none;
+    font-size: 16px;
+}
+
+.categories-list {
+    margin-top: 15px;
+}
+
+.categories-list ul li {
+
+    border-bottom: 2px solid #eee;
+
+    text-transform: uppercase;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+.categories-list ul li a:hover {
+
+    color: #ea7c00;
+    padding-left: 10px;
+
+}
+
+.categories-list ul li a {
+
+    color: #333;
+    transition: 0.2s;
+    display: block;
+    padding: 10px 4px;
+
+}
+
+.blog-button a:hover {
+    color: #fff;
+
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.blog-heading {
+
+    font-weight: 600;
+    padding-bottom: 0 !important;
+
+}
+
+.post-by {
+
+    color: #333;
+
+}
+
+.user-like {
+
+    padding-left: 30px;
+
+}
+
+.black {
+
+    color: #333;
+
+}
+
+.blog-border-bottom {
+    border-bottom: 2px solid #333;
+}
+
+/* end blog page csss*/
+
+/* carousel */
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control {
+    background: none;
+    color: #222;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+
+/* Previous button  */
+#quote-carousel .carousel-control.left {
+    left: -12px;
+}
+
+/* Next button  */
+#quote-carousel .carousel-control.right {
+    right: -12px !important;
+}
+
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li {
+
+    background: #c0c0c0;
+    border: 1px solid #ea7c00;
+
+}
+
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+}
+
+#quote-carousel img {
+    width: 250px;
+    height: 100px
+}
+
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+.testimonial-text {
+    padding-right: 60px !important;
+}
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #quote-carousel {
+        margin-bottom: 0;
+        padding: 0 40px 30px 40px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.comnt-pic img {
+
+    height: 80px !important;
+    width: 80px !important;
+
+}
+
+.btn-odr-now .now-btn {
+
+    padding: 9px;
+    border-radius: 8px;
+
+}
+
+.odr-now {
+
+    font-size: 20px;
+    padding-top: 6px;
+
+}
+
+.show-product-kalorien {
+    position: absolute !important;
+    top: 0;
+}
+
+.show-product-kalorien .meal-product-round-main {
+
+    margin-top: 17px !important;
+
+}
+
+.show-product-kalorien .meal-product-round-main .Kohlenhydrate {
+
+    margin-left: 10px;
+
+}
+
+.related-img .rlte-img img {
+
+    height: 300px;
+    width: 350px;
+
+}
+
+.rlte-img {
+    margin-bottom: 40px;
+}
+
+.show-product-kalorien {
+
+    background: #0009;
+    width: 319px;
+    margin-left: 3px;
+    margin-top: 3px;
+    padding-bottom: 14px;
+    opacity: 0;
+
+}
+
+.rlte-img:hover .show-product-kalorien {
+
+    opacity: 1;
+
+}
+
+.quantity input {
+
+    border: 1px solid #ea7c00 !important;
+
+}
+
+.navigation-main li a:hover i.fa.fa-angle-down {
+
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.level1.nav-1-3.parent {
+
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding-right: 0px !important;
+
+}
+
+.info-color {
+
+    color: #ea7c00;
+    font-size: 18px;
+
+}
+
+.info-content {
+
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.info-heading {
+    font-size: 45px;
+}
+
+.info-heading-right {
+    font-size: 37px;
+    padding-top: 9px;
+    padding-bottom: 20px;
+    color: #ea7c00;
+}
+
+.info-heading-section-two {
+    font-size: 22px;
+    padding-top: 6px;
+    color: #ea7c00;
+}
+
+.select-field .quantity {
+
+    margin-bottom: 10px;
+
+}
+
+.input-number {
+    z-index: 99 !important;
+}
+
+.cart-btn-padding {
+    padding: 6px !important;
+}
+
+.remove-cart {
+
+    opacity: 1 !important;
+
+}
+
+.cart-sidebar span {
+
+    float: right;
+
+}
+
+.cart_total {
+
+    width: 300px !important;
+
+    float: right !important;
+
+    border: 4px solid #eee;
+
+    border-radius: 19px;
+
+    padding: 25px;
+
+    padding-right: 25px;
+    padding-left: 25px;
+
+}
+
+.count-product {
+
+    width: 150px !important;
+
+}
+
+.cart-list-main {
+
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+
+}
+
+.card-product-title a {
+
+    color: #000;
+
+}
+
+.terms-check {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.coupon_code_main {
+    margin-top: 20px;
+}
+
+.clear-bag-main {
+    clear: both;
+    padding-top: 30px;
+    border-top: 2px solid #eee;
+}
+
+.clear-bag-main .button-add:hover {
+    color: #fff;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.coupon_code_field {
+
+    clear: both;
+    padding-bottom: 50px;
+    margin-bottom: 11px !important;
+
+}
+
+.coupon_code_main .button-add:focus {
+
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.padding-none {
+    padding: 0 !important;
+}
+
+.shopping-icon {
+    font-size: 21px !important;
+    margin: 0 4px 2px 5px !important;
+}
+
+.shopping-icon a {
+
+    color: #000;
+
+}
+
+.profile-usertitle-name {
+    font-size: 22px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.profile-usermenu ul li {
+    font-size: 15px;
+    padding: 7px 0px;
+}
+
+.reorder {
+    background: #ea7c00;
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 7px;
+    position: relative;
+    top: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.change-password {
+    padding: 18px;
+    background: #eee;
+}
+
+.change-password .button-add {
+
+    width: 100%;
+
+}
+
+.check-total {
+    text-align: right;
+    padding-bottom: 15px;
+}
+
+.checkout-btn {
+    width: 100%;
+}
+
+.profile-usermenu ul li {
+    padding-left: 10px;
+}
+
+.checked-address {
+
+    display: table-cell;
+    padding-right: 10px;
+
+}
+
+.checked-address-width {
+    width: 400px;
+}
+
+#show_adrs_one, #show_adrs_two, #show_adrs_three {
+    font-size: 18px;
+    color: #777;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    height: 30px;
+    float: right;
+    right: 24px;
+    top: 29px;
+    position: absolute;
+}
+
+#show_adrs_one i, #show_adrs_two i, #show_adrs_three i {
+    padding-top: 6px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .navigation-main .fa.fa-angle-down {
+        display: none !important;
+    }
+}
+
+.login-form-border {
+
+    border-right: 3px solid #eee;
+
+}
+
+.login-width {
+    width: 80%;
+}
+
+.btnSubmit {
+
+    background: #ea7c00;
+    border: 0;
+    padding: 11px 43px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.login-menu {
+    position: relative;
+    padding: 7px;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 10px;
+
+}
+
+.login-menu:hover {
+    color: #000;
+}
+
+.login-form-border {
+
+    border-right: 3px solid #eee;
+    width: 51px !important;
+    height: 400px;
+
+}
+
+.cart-bag {
+    position: relative;
+    top: 24px;
+}
+
+.about-text {
+    font-size: 17px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.two.about-section-2 {
+    margin-top: 45px;
+}
+
+.change-password .button-add:hover {
+    color: #fff;
+}
